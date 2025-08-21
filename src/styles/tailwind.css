@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core System Colors */
+    --color-background: #0a0a0f; /* deep-space-blue */
+    --color-foreground: #ffffff; /* white */
+    --color-border: #1a1a2e; /* elevated-surface */
+    --color-input: #1a1a2e; /* elevated-surface */
+    --color-ring: #00d4ff; /* electric-blue */
+    
+    /* Card Colors */
+    --color-card: #1a1a2e; /* elevated-surface */
+    --color-card-foreground: #ffffff; /* white */
+    
+    /* Popover Colors */
+    --color-popover: #1a1a2e; /* elevated-surface */
+    --color-popover-foreground: #ffffff; /* white */
+    
+    /* Muted Colors */
+    --color-muted: #0a0a0f; /* deep-space-blue */
+    --color-muted-foreground: #b8bcc8; /* soft-gray */
+    
+    /* Primary Colors */
+    --color-primary: #00d4ff; /* electric-blue */
+    --color-primary-foreground: #0a0a0f; /* deep-space-blue */
+    
+    /* Secondary Colors */
+    --color-secondary: #8a2be2; /* deep-violet */
+    --color-secondary-foreground: #ffffff; /* white */
+    
+    /* Destructive Colors */
+    --color-destructive: #ff4757; /* clinical-red */
+    --color-destructive-foreground: #ffffff; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #00ffa1; /* bright-teal */
+    --color-accent-foreground: #0a0a0f; /* deep-space-blue */
+    
+    /* Success Colors */
+    --color-success: #39ff14; /* neon-green */
+    --color-success-foreground: #0a0a0f; /* deep-space-blue */
+    
+    /* Warning Colors */
+    --color-warning: #ffa500; /* medical-orange */
+    --color-warning-foreground: #0a0a0f; /* deep-space-blue */
+    
+    /* Error Colors */
+    --color-error: #ff4757; /* clinical-red */
+    --color-error-foreground: #ffffff; /* white */
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .font-data {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .font-caption {
+    font-family: 'Rajdhani', sans-serif;
+  }
+}
+
+@layer components {
+.glassmorphism  {
+    @apply backdrop-blur-[20px] bg-white/5 border;
+    box-shadow: 0 4px 20px rgba(0, 212, 255, 0.15);
+  }
+
+  .holographic-glow {
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.3), 0 0 20px rgba(0, 212, 255, 0.2);
+  }
+
+  .neon-border {
+    @apply border border-primary;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+  }
+
+  .elevation-primary {
+    box-shadow: 0 4px 20px rgba(0, 212, 255, 0.15), 0 8px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .elevation-secondary {
+    box-shadow: 0 2px 10px rgba(138, 43, 226, 0.15), 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .transition-smooth {
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .transition-3d {
+    transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes pulse-glow {
+    from {
+      box-shadow: 0 0 5px rgba(0, 212, 255, 0.2);
+    }
+    to {
+      box-shadow: 0 0 20px rgba(0, 212, 255, 0.4), 0 0 30px rgba(0, 212, 255, 0.2);
+    }
+}
+
+  .skeleton  {
+    @apply animate-pulse bg-gradient-to-r from-muted to-muted;
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s ease-in-out infinite;
+  }
+
+  @keyframes skeleton-loading {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+}
