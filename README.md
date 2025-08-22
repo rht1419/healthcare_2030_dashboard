@@ -100,8 +100,8 @@ npm run build
 
 ## 🙏 Acknowledgments
 
-- Built with [Rocket.new](https://rocket.new)
+- Built with Rocket.new
 - Powered by React and Vite
 - Styled with Tailwind CSS
 
-Built with ❤️ on Rocket.new
+Built By Rohit.R
