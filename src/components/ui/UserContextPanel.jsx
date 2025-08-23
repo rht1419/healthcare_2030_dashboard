@@ -4,7 +4,7 @@ import Button from './Button';
 
 const UserContextPanel = ({ 
   user = {
-    name: 'Dr. Alina Izma.Z',
+    name: 'Dr. Aaliyah',
     role: 'Chief Medical Officer',
     department: 'Strategic Analytics',
     permissions: ['executive', 'analytics', 'reports']
