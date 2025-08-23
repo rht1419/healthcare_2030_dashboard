@@ -135,7 +135,7 @@ const NavigationBar = () => {
                 {/* Mobile view - Doctor name with live dot */}
                 <div className="flex md:hidden items-center space-x-2">
                   <span className="text-sm font-medium text-foreground">
-                    Dr. Alina Izma.Z
+                    Dr. Aaliyah
                   </span>
                   <div className="w-2 h-2 bg-green-500 rounded-full pulse-glow" />
                 </div>
