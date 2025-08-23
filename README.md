@@ -100,7 +100,7 @@ npm run build
 
 ## 🙏 Acknowledgments
 
-- Built with Rocket.new
+- Built with Rocket.new and Builder.io
 - Powered by React and Vite
 - Styled with Tailwind CSS
 
