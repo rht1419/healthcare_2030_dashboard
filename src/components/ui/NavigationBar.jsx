@@ -151,7 +151,7 @@ const NavigationBar = () => {
                         <Icon name="User" size={20} color="#ffffff" />
                       </div>
                       <div>
-                        <p className="font-medium text-foreground">Dr. Alina Izma.Z</p>
+                        <p className="font-medium text-foreground">Dr. Aaliyah</p>
                         <p className="text-sm text-muted-foreground">Chief Medical Officer</p>
                       </div>
                     </div>
