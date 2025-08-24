@@ -129,13 +129,13 @@ const NavigationBar = () => {
                 </div>
                 <div className="hidden md:flex items-center space-x-2">
                   <span className="text-sm font-medium text-foreground">
-                    Dr. Aaliyah
+                    Dr. Alina Izma.Z
                   </span>
                 </div>
                 {/* Mobile view - Doctor name with live dot */}
                 <div className="flex md:hidden items-center space-x-2">
                   <span className="text-sm font-medium text-foreground">
-                    Dr. Aaliyah
+                    Dr. Alina Izma.Z
                   </span>
                   <div className="w-2 h-2 bg-green-500 rounded-full pulse-glow" />
                 </div>
@@ -151,7 +151,7 @@ const NavigationBar = () => {
                         <Icon name="User" size={20} color="#ffffff" />
                       </div>
                       <div>
-                        <p className="font-medium text-foreground">Dr. Aaliyah</p>
+                        <p className="font-medium text-foreground">Dr. Alina Izma.Z</p>
                         <p className="text-sm text-muted-foreground">Chief Medical Officer</p>
                       </div>
                     </div>
