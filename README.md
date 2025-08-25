@@ -104,4 +104,4 @@ npm run build
 - Powered by React and Vite
 - Styled with Tailwind CSS
 
-Built By Rohit.R
+Built By Alina Izma.Z
